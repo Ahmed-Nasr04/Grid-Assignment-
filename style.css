@@ -1,0 +1,569 @@
+/* --------------- Main setting --------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    line-height: 26px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'Arvo', sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+/*  ------------------------- Grid setting -------------------- */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 25%;
+    grid-template-rows: 1fr 1fr 1fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "card-one card-one card-two card-two"
+        "card-three card-four card-four card-five"
+        "card-six card-seven card-seven card-five"
+        "card-eight card-nine card-ten card-ten";
+}
+
+/* --------------------------- Card One Setting --------------------- */
+.card-one {
+    grid-area: card-one;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-inline: 4%;
+}
+
+.special {
+    font-family: 'Montserrat', sans-serif;
+    color: #9fa3a7;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.card-one img {
+    width: 249px;
+    padding-top: 40px;
+    align-self: flex-end;
+}
+
+.caption {
+    width: 32%;
+}
+
+.gray-color {
+    color: #9fa3a7;
+    font-size: 14px;
+}
+
+/* ---------------------- End card one -------------------------------- */
+
+/* ---------------------- start Card two ---------------------------- */
+.card-two {
+    grid-area: card-two;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f7f8f9;
+}
+
+.card-two h1 {
+    font-family: 'Arvo', sans-serif;
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 400;
+    margin-block: 20px 10px;
+    max-width: 550px;
+}
+
+.card-two a {
+    color: #27b9c2;
+    text-decoration: underline;
+}
+
+/* ------------------------ End  card two ----------------- */
+
+/* ------------------------ start card three ------------------------ */
+.card-three {
+    grid-area: card-three;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f05638;
+}
+
+.card-three img {
+    width: 319px;
+}
+
+.card-three h3 {
+    display: block;
+    max-width: 230px;
+    margin-bottom: 0px;
+    color: #fff;
+}
+
+.card-three a {
+    margin-top: 20px;
+    color: #ffc80a;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+}
+
+strong {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* ------------------------- End card Three ------------------------------- */
+
+/* --------------------------- start card four ----------------------------- */
+.card-four {
+    grid-area: card-four;
+    overflow: hidden;
+    padding-top: 68px;
+    padding-right: 4%;
+    padding-left: 4%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.chapter-one {
+    text-align: left;
+    width: 50%;
+    max-width: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chapter-one img {
+    position: relative;
+    left: -160%;
+    width: 250%;
+    max-width: none;
+    margin-top: 20px
+}
+
+.chapter-one h3 {
+    margin-bottom: auto;
+}
+
+.chapter-two {
+    width: 40%;
+}
+
+.chapter-two a {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #27b9c2;
+}
+
+.chapter-two span {
+    font-size: 16px;
+}
+
+/* ----------------------------- End card four ------------------------------ */
+
+/* ---------------------------- start card five ------------------------------ */
+.card-five {
+    grid-area: card-five;
+    padding: 30px 5% 70px;
+    background-color: #8f76bc;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.photo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 373px;
+    height: 373px;
+    border-radius: 50%;
+    background-color: #8166b0;
+    row-gap: 10px ;
+}
+
+.photo-section img {
+    width: 239px;
+}
+
+.text-block {
+    padding: 2px 13px 1px 30px;
+    border-radius: 60px;
+    background-color: hsla(0, 0%, 100%, .08);
+    background-image: url(img/5bc2f42d5a5ed9663e707e7d_Shape.png);
+    background-position: 11px 50%;
+    background-size: 12px;
+    background-repeat: no-repeat;
+    font-size: 10px;
+    line-height: 23px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+}
+
+.img-footer {
+    font-family: Montserrat, sans-serif;
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.card-five h2 {
+    font-family: 'Arvo', sans-serif;
+    font-size: 32px;
+    line-height: 36px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.text {
+    width: 80%;
+    max-width: 290px;
+}
+
+.a-button {
+    margin-top: 30px;
+    padding: 14px 28px;
+    border-radius: 50px;
+    background-color: #ffc80a;
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* ----------------------------- End card five ---------------------------------- */
+
+/* -------------------------- start card six --------------------------------- */
+.card-six {
+    grid-area: card-six;
+    background-color: tomato;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f8f9;
+}
+
+.card-six img {
+    width: 248px;
+    position: relative;
+    left: -20px;
+}
+
+.card-six h3 {
+    width: 54%;
+    text-align: center;
+}
+
+.card-six a {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #27b9c2;
+    text-decoration: none;
+}
+
+.card-six strong {
+    font-size: 16px;
+}
+
+/* ------------------------------ End card six ------------------ */
+/* ----------------------------- start card seven ---------------------- */
+.card-seven {
+    position: relative;
+    grid-area: card-seven;
+    padding-top: 30px;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #93b6b7;
+    background-image: url(img/5bc2f42d5a5ed97dab707e7e_UX.png);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: 80%;
+    color: #fff;
+    text-align: center;
+}
+
+.signal {
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    background-color: #fa684f;
+    font-size: 8px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.h3-decoration {
+    display: block;
+    max-width: 280px;
+    margin: auto;
+    padding-top: 31px;
+    padding-bottom: 31px;
+    font-weight: bolder;
+    text-align: center;
+    color: #fff;
+}
+
+.card-seven img {
+    width: 90%;
+    position: relative;
+    left: -7%;
+}
+
+/* ------------------------------- end card seven ------------------------- */
+
+/* ----------------------------- start card eight ---------------------------- */
+.card-eight {
+    grid-area: card-eight;
+    display: flex;
+    /* overflow: hidden; */
+    justify-content: center;
+    align-items: center;
+    background-color: #38d5f4;
+    color: #fff;
+}
+
+.twitter {
+    display: flex;
+    width: 240px;
+    height: 240px;
+    padding-right: 34px;
+    padding-left: 34px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #35cfed;
+    text-align: center;
+}
+
+.twitter img {
+    width: 43.5px;
+}
+
+/* ----------------------------- End card eight --------------------------- */
+
+/* --------------------------- start card nine ------------------- */
+.card-nine {
+    grid-area: card-nine;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f7f8f9;
+}
+
+.signal-two {
+    background-color: #7bc424;
+    color: #fff;
+    font-size: 8px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+.card-nine h3 {
+    width: 70%;
+    text-align: center;
+}
+
+/* --------------------------------------- End card nine ---------------------- */
+
+/* -------------------------------------- start card ten ----------------------- */
+.card-ten {
+    grid-area: card-ten;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5%;
+    padding-left: 5%;
+    background-color: #2c2c2c;
+    color: #fff;
+    overflow: hidden;
+}
+
+.card-ten img {
+    width: 271px;
+    position: relative;
+    left: -15%;
+}
+
+.card-ten h3 {
+    width: 34%;
+}
+
+/* ------------------------------------- End card ten ------------------------- */
+
+@media (max-width:390px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 25%;
+        grid-template-rows: none;
+        grid-auto-rows: auto;
+        grid-template-areas:
+            "card-two card-two card-two card-two"
+            "card-one card-one card-one card-one"
+            "card-three card-three card-three card-three"
+            "card-six card-six card-six card-six"
+            "card-four card-four card-four card-four"
+            "card-eight card-eight card-eight card-eight"
+            "card-seven card-seven card-seven card-seven"
+            "card-five card-five card-five card-five"
+            "card-nine card-nine card-nine card-nine"
+            "card-ten card-ten card-ten card-ten";
+    }
+
+    .card-two {
+        grid-area: card-two;
+        padding-block: 50px ;
+        justify-content: flex-start; 
+    }
+
+    .card-one {
+        grid-area: card-one;
+        flex-direction: column;
+    }
+
+    .card-three {
+        grid-area: card-three;
+        justify-content: flex-start;
+        padding: 40px 0px ;
+        flex-basis: 100%;
+    }
+
+    .card-six {
+        grid-area: card-six;
+        padding-block: 30px ;
+    }
+
+    .card-four {
+        grid-area: card-four;
+        flex-direction: column;
+        padding-bottom: 40px ;
+    }
+    .chapter-one{
+        max-width: none;
+        width: 100% ;
+        padding-bottom: 30px ;
+    }
+    .chapter-one img{
+        left: -115%;
+        width: 200%;
+        margin-top: 40px;
+    }
+    .chapter-two{
+        width: 100% ;
+    }
+
+    .card-eight {
+        grid-area: card-eight;
+    }
+
+    .card-seven {
+        grid-area: card-seven;
+    }
+
+    .card-five {
+        grid-area: card-five;
+    }
+
+    .card-nine {
+        grid-area: card-nine;
+        padding-block: 30px;
+    }
+
+    .card-ten {
+        grid-area: card-ten;
+        text-align: center;
+        flex-direction: column;
+        padding-bottom: 30px ;
+        h3{
+            width: 100% ;
+        }
+    }
+
+    .card-one img {
+        padding-top: 0;
+    }
+
+    .card-two h1 {
+        font-size: 39px;
+    }
+
+    .caption {
+        width: 100%;
+        padding: 40px 20px;
+    }
+
+    .card-one img {
+        width: 249px;
+        position: relative;
+        left: -4%;
+        margin-inline: auto;
+    }
+
+
+
+}
